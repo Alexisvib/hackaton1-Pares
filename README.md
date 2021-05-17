@@ -23,7 +23,7 @@ The purpose of the game : fight all the enemy and look after the robot Curiosity
 - HTML
 - PHP
 - Javascript
-- MYSQL (the program need just one table with 3 informations : pseudo / password / progression
+- MYSQL : the program need just one table with 3 informations : pseudo / password / progression
 
 
 ## My contribution to the project
