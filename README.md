@@ -1,7 +1,9 @@
 # Hackaton n°1 : project ( P )ARES !
 
 This hackathon has taken place from 11-05-2021 9 am to 12-05-2021 12 am.
+
 Subject of the hackaton :  **Lonely On Mars**
+
  **The robots Ingenuity (Ginny) and Perceverance (Percy) are alone on Mars. The teams have to build a web app to solve their boredom**
 
 ## The Team
