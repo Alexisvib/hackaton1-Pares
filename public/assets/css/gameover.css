@@ -1,0 +1,18 @@
+.button-gameover{
+    background-color: transparent;
+    border: 0;
+    font-size: 2rem
+}
+
+.gameover-title{
+    font-size: 8rem;
+}
+.title{
+    background-color: transparent;
+    border: 0;
+}
+.title:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    animation: 3s ease-in;
+}

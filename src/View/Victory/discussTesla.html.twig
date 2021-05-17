@@ -1,0 +1,25 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+<body class="endgame">
+{% endblock %}
+
+{% block content %}
+    <div class="container top-boss d-flex justify-content-center">
+        <p class="text-boss mt-5">Well Done !</p>
+    </div>
+    <div class="d-flex flex-column align-items-center mb-5">
+        <h2 class="text-boss">You find the last battery for Curiosity.</h2>
+        <p class="text-boss">It's time to meet him !</p>
+    </div>
+
+    <div class="row d-flex justify-content-center fadeIn">
+        <form action="/Victory/endgame" method="post">
+            <button type="submit" class="button-start">Meet your friend ! </button>
+        </form>
+    </div>
+
+{% endblock %}
+{% block javascript %}
+<script src="/assets/script/home.js"></script>
+{% endblock %}

@@ -1,0 +1,19 @@
+.endgame{
+    background-image: url("../images/fond_endgame.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-endgame{
+    animation: swing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.font-endgame{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 2em;
+    text-shadow: 4px 3px 0 #7A7A7A;
+}

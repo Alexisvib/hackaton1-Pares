@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+<body class="endgame">
+{% endblock %}
+
+{% block content %}
+    <div class="container d-flex justify-content-center">
+        <p class="h1 title-victory animate__heartBeat ">!!! CONGRATULATIONS !!!</p>
+    </div>
+    <div class="row">
+        <div class="offset-3 col-2">
+            <img src="/assets/images/ROBOT2.png" alt="" class="img-fluid animate__swing img-endgame">
+        </div>
+        <div class="col-2">
+            <img src="/assets/images/ROBOT1.png" alt="" class="img-fluid animate__swing img-endgame">
+        </div>
+        <div class="col-2">
+            <img src="/assets/images/ROBOT3.png" alt="" class="img-fluid animate__swing img-endgame">
+        </div>
+    </div>
+    <div class="container font-endgame d-flex justify-content-center mt-5">
+        <p class="text-center">No more loneliness, just happiness!</p>
+    </div>
+{% endblock %}
+{% block javascript %}
+<script src="/assets/script/victory.js"></script>
+{% endblock %}

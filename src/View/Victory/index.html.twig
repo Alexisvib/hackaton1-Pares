@@ -1,0 +1,51 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+<body class="victory">
+{% endblock %}
+
+{% block content %}
+    <div class="container d-flex justify-content-center">
+        <p class="h1 title-victory animate__heartBeat ">!!! VICTORY !!!</p>
+    </div>
+    <div class="row">
+        <div class="offset-1 col-4 offset-2 d-flex flex-column" >
+            <div class="d-flex justify-content-start">
+                <img src="/assets/images/ROBOT2.png" alt="robot2" class="img-fluid w-25 animate__swing robot-victory">
+            </div>
+            <div class="fadeIn ">
+                <h2>Percy</h2>
+                <p class="d-inline">Life : {{ session.maxlife_percy }}</p><p class="d-inline add-point">(+20)</p>
+                <p class="d-inline">Attack : {{ session.atk_percy }}</p><p class="d-inline add-point">(+20)</p>
+            </div>
+        </div>
+        <div class="col-4 offset-1 d-flex flex-column">
+            <div class="d-flex justify-content-start">
+                <img src="/assets/images/ROBOT3.png" alt="robot2" class="img-fluid w-25 animate__swing robot-victory">
+            </div>
+            <div class="fadeIn ">
+                <h2>Ginny</h2>
+                <p class="d-inline">Life : {{ session.maxlife_ginny }}</p><p class="d-inline add-point">(+20)</p>
+                <p class="d-inline">Attack : {{ session.atk_ginny }}</p><p class="d-inline add-point">(+20)</p>
+            </div>
+        </div>
+    </div>
+    <div class="row fadeIn">
+       <div class="offset-2 col-8 offset-2 d-flex justify-content-center mt-5">
+           <p> ----LOOT---- </p>
+       </div>
+    </div>
+
+    <div class="row d-flex justify-content-center fadeIn">
+    <form action="/victory/victoryNext" method="post">
+        <input type="hidden" name="percy-atk" value="20">
+        <input type="hidden" name="ginny-atk" value="20">
+        <input type="hidden" name="percy-life" value="20">
+        <input type="hidden" name="ginny-life" value="20">
+        <button type="submit" class="button-continue"> CONTINUER </button>
+    </form>
+    </div>
+{% endblock %}
+{% block javascript %}
+<script src="/assets/script/victory.js"></script>
+{% endblock %}

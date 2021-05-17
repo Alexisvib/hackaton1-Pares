@@ -1,0 +1,38 @@
+.button-start{
+    background-color:transparent;
+    color:white;
+    border:0;
+}
+
+.title-intro{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2em;
+    color: white;
+    margin-top: 1em;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    display: inline-block;
+    animation: animate__flash; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 10s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+
+.title:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    animation: 3s ease-in;
+}
+
+.button-start:hover{
+    background-color:white;
+    color:black;
+    transform: scale(1.2);
+    animation: 3s ease-in;
+}
+
+.text{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: white;
+    margin-top: 3em;
+    text-shadow: 4px 3px 0 #7A7A7A;
+}

@@ -1,0 +1,57 @@
+.map{
+    background-image: url("../images/fond_map.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title-map{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: white;
+    text-shadow: 4px 3px 0 #7A7A7A;
+}
+
+.num-map{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3em;
+    color: white;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+.blue-arow{
+    animation: animate__rubberBand; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(5, 5, 5);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+a:hover {
+    text-decoration: none;
+}

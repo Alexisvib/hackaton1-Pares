@@ -1,0 +1,59 @@
+.victory{
+    background-image: url("../images/fond_victory.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title-victory{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    color: white;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    display: inline-block;
+    animation: heartBeat;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.robot-victory{
+    animation: swing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.fadeIn {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 2em;
+    text-shadow: 4px 3px 0 #7A7A7A;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.add-point {
+    color : #00ff00;
+    text-shadow: 4px 3px 0 #053c00;
+}
+
+    .button-continue{
+        background-color:transparent;
+        color:white;
+        border:0;
+    }
+
+
+    .button-continue:hover{
+        background-color:white;
+        color:black;
+        transform: scale(1.2);
+        animation: 3s ease-in;
+    }

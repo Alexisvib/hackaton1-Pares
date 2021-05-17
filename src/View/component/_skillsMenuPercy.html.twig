@@ -1,0 +1,33 @@
+<div id='skills-Percy' class="display-none d-flex">
+    <row><h3 id='close-skills-percy' class="close-skill mt-1 col-1 offset-12">X</h3></row>
+    <div class=" d-flex flex-column align-items-center" >
+
+        <form method="post" action="/level{{ session.progression }}/technology{{ session.progression }}" class="mt-3" id="form-laser">
+            <h2 class="title-technology spell" id="spellLaser">Laser</h2>
+            <input class="title-technology spell" type="hidden" name="spell"  value="laser"
+                   data-toggle="tooltip" data-placement="top" title="Percy's attack + 20% bonus damage | 1pt Technology">
+            <input type="hidden"  name="attacker" id="attacker" value="{{ attacker }}">
+        </form>
+
+        <form method="post" action="/level{{ session.progression }}/technology{{ session.progression }}" class="mt-3" id="form-missile">
+            <h2 class="title-technology spell" id="spellRocket">Rocket</h2>
+            <input class="title-technology spell" type="hidden" name="spell" id="spellMissile" value="missile"
+                   data-toggle="tooltip" data-placement="top" title="Percy's attack + 40% bonus damage  | 2pts Technology">
+            <input type="hidden" name="attacker" id="attacker" value="{{ attacker }}">
+        </form>
+
+        <form method="post" aaction="/level{{ session.progression }}/technology{{ session.progression }}" class="mt-3" id="form-tecktonikAttack">
+            <h2 class="title-technology spell" id="spellMusic">Tecktonik</h2>
+            <input class="title-technology spell" type="hidden" name="spell" id="spellTecktonik" value="tecktonikAttack"
+                   data-toggle="tooltip" data-placement="top" title="Percy's attack x 2  | 4ts Technology">
+            <input type="hidden" name="attacker" id="attacker" value="{{ attacker }}">
+        </form>
+
+        <form method="post" action="/level{{ session.progression }}/technology{{ session.progression }}" class="mt-3" id="form-asteroid">
+            <h2 class="title-technology spell" id="spellAsteroid">Asteroid</h2>
+            <input class="title-technology spell" type="hidden" name="spell" id="spellAsteroid" value="asteroid"
+                   data-toggle="tooltip" data-placement="top" title="Percy's attack X 4 | 6pts Technology">
+            <input type="hidden" name="attacker" id="attacker" value="{{ attacker }}">
+        </form>
+    </div>
+</div>

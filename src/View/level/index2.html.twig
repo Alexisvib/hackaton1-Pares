@@ -1,0 +1,34 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+<body class="level2">
+{% endblock %}
+
+{% block content %}
+<div type="hidden" name="{{ attacker }}"></div>
+<div class="container-fluid">
+    {% include  'component/_ginny.html.twig'%}
+    <div class="row justify-content-between">
+        {% include  'component/_percy.html.twig'%}
+        <div class="enemy animate__bounce col-3 " id="enemy">
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                     style="width: {{ (hpCharacters.enemy/session.maxlife_monster)*100 }}%"
+                     aria-valuenow="{{ hpCharacters.enemy }}" aria-valuemin="0"
+                     aria-valuemax="{{ session.maxlife_monster }}">{{ hpCharacters.enemy }}/{{ session.maxlife_monster }}</div>
+            </div>
+            <img  class="img-fluid" src="/assets/images/monster2.png">
+        </div>
+    </div>
+    {% include 'component/_skillsMenuPercy.html.twig' %}
+    {% include 'component/_skillsMenuGinny.html.twig'%}
+    {% include  'component/_fight_menu.html.twig'%}
+   <div><img class="img-fluid interaction fadeIn attack-physic-enemy" src="/assets/images/degatphysic.png" id="claw-attack"></div>
+   <div><img class="img-fluid fadeIn interaction attack-physic-allies" src="/assets/images/degatphysic.png" id="claw-damage"></div>
+    {% include 'component/_animation_technology.html.twig' %}
+</div>
+{% endblock %}
+{% block javascript %}
+
+<script src="/assets/script/fight.js"></script>
+{% endblock %}

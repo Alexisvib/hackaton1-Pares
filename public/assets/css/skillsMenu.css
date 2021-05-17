@@ -1,0 +1,42 @@
+.menu-skills{
+    background: linear-gradient(0deg, rgba(32,159,161,1) 0%, rgba(79,45,253,1) 100%);
+    border: 5px solid white;
+    position:fixed;
+    bottom: 0%;
+    width:33em;
+    left: 40%;
+}
+.display-none{
+    display: none;
+    visibility: hidden;
+    height: 0;
+}
+
+.spell{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 4px 3px 0 #7A7A7A;
+}
+
+.spell:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    animation: 3s ease-in;
+}
+
+.close-skill{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+.close-skill:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    animation: 3s ease-in;
+}
+
+.title-technology{
+    background-color: transparent;
+    border:0;
+}

@@ -1,0 +1,18 @@
+<div id="menu-fight" class="menu-fight d-flex flex-column align-items-center" >
+    <form method="post" action="/level{{ session.progression }}/index{{ session.progression }}" class="mt-3" id="menu-attack-action">
+        <h2 class="title-fight" id="attack">ATTACK</h2>
+        <input type="hidden" name="attacker" id="attacker" value="{{ attacker }}">
+    </form>
+
+    <form id="menu-technology-action">
+        <h2 class="title-fight" id="technology">TECHNOLOGY</h2>
+      {#   <input type="hidden" name="attacker" value="{{ attacker }}">
+        <input type="hidden" name="target" value="percy">
+        <input name="spell" type="submit" value="eMcKiss">#}
+    </form>
+    <form method="post" action="/test/index"  class="mt-3" id="menu-technology-potion">
+        <h2 class="title-fight" id="potion">REPAIR KIT</h2>
+        <input name="test"  type="hidden" type="submit" value="potion">
+    </form>
+</div>
+

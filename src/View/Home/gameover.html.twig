@@ -1,0 +1,27 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<div class="body-home">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center ">
+        <h1 class="title animate__flash gameover-title">GAME OVER</h1>
+        </div>
+
+        <div class="row d-flex justify-content-center fadeIn mt-5">
+            <form action="/home/index" method="post">
+                <button type="submit" class="button-gameover title"> Insert a coin </button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+{% block javascript %}
+<script src="/assets/script/home.js"></script>
+<script src="/assets/script/victory.js"></script>
+{% endblock %}

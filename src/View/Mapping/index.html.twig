@@ -1,0 +1,109 @@
+{% extends 'layout.html.twig' %}
+
+{% block body %}
+<body class="map">
+{% endblock %}
+
+{% block content %}
+    <div class="container d-flex justify-content-center">
+        <p class="h1 title-map ">ROAD TO CURIOSITY</p>
+    </div>
+    <div class="row num-map">
+        {% if session.progression > 4 %}
+        <div class="rounded-circle offset-5 col-1">
+            {% if session.progression == 5 %}
+                <img src="/assets/images/bluearrow.png" class="img-fluid blue-arow animate__rubberBand">
+            {% endif %}
+            <a id="level5" href="/level5/index5">X</a>
+        </div>
+        {% endif %}
+        {% if session.progression > 8 %}
+        <div class="rounded-circle offset-3 col-1">
+            {% if session.progression == 9 %}
+                <img src="/assets/images/bluearrow.png" class="img-fluid blue-arow animate__rubberBand">
+            {% endif %}
+            <a id="level9" href="/level9/index9">X</a>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="row num-map">
+        {% if session.progression > 3 %}
+        <div class="rounded-circle offset-4 col-1">
+            {% if session.progression == 4 %}
+                <img src="/assets/images/bluearrow.png" class="img-fluid blue-arow animate__rubberBand">
+            {% endif %}
+            <a id="level4" href="/level4/index4">X</a>
+        </div>
+        {% endif %}
+        {% if session.progression > 5 %}
+        <div class="rounded-circle col-1 offset-1">
+            <a id="level6" href="/level6/index6">
+                {% if session.progression == 6 %}
+                    <img src="/assets/images/bluearrow.png" class="img-fluid blue-arow animate__rubberBand">
+                {% endif %}
+                <img src="/assets/images/boss-map.png" alt="" class="img-fluid pulse">
+            </a>
+        </div>
+        {% endif %}
+        {% if session.progression > 7 %}
+        <div class="rounded-circle col-1 offset-1">
+            {% if session.progression == 8 %}
+                <img src="/assets/images/bluearrow.png" class="img-fluid blue-arow animate__rubberBand">
+            {% endif %}
+            <a id="level8" href="/level8/index8">X</a>
+        </div>
+        {% endif %}
+        {% if session.progression > 9 %}
+        <div class="rounded-circle col-1 offset-1">
+            {% if session.progression == 10 %}
+                <img src="/assets/images/bluearrow.png" class="img-fluid blue-arow animate__rubberBand">
+            {% endif %}
+            <a id="level10" href="/level10/index10">
+                <img src="/assets/images/boss-map.png" alt="" class="img-fluid pulse">
+            </a>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="row num-map">
+        <div class="rounded-circle offset-1 col-1">
+            {% if session.progression == 1 %}
+                <img src="/assets/images/bluearrow.png" class="img-fluid blue-arow animate__rubberBand">
+            {% endif %}
+            <a id="level1" href="/level1/index1">X</a>
+        </div>
+        {% if session.progression > 2 %}
+        <div class="rounded-circle offset-1 col-1">
+            {% if session.progression == 3 %}
+                <img src="/assets/images/bluearrow.png" class="img-fluid blue-arow animate__rubberBand">
+            {% endif %}
+            <a id="level3" href="/level3/index3">X</a>
+        </div>
+        {% endif %}
+        {% if session.progression > 6 %}
+        <div class="rounded-circle offset-3 col-1">
+            {% if session.progression == 7 %}
+                <img src="/assets/images/bluearrow.png" class="img-fluid blue-arow animate__rubberBand">
+            {% endif %}
+            <a id="level7" href="/level7/index7">X</a>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="row num-map mb-5">
+        {% if session.progression > 1 %}
+        <div class="rounded-circle offset-2 col-1">
+            <a id="level2" href="/level2/index2">
+                {% if session.progression == 2 %}
+                    <img src="/assets/images/bluearrow.png" class="img-fluid blue-arow animate__rubberBand">
+                {% endif %}
+            <img src="/assets/images/boss-map.png" alt="" class="img-fluid pulse">
+            </a>
+        </div>
+        {% endif %}
+    </div>
+{% endblock %}
+{% block javascript %}
+
+{% endblock %}

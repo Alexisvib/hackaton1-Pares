@@ -1,0 +1,37 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<div class="body-home">
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center ">
+        <h1 class="title-intro animate__flash">Introduction</h1>
+        </div>
+
+        <div class="d-flex flex-column align-items-center mb-5">
+            <h2 class="text">Story :</h2>
+            <p class="text">Ginny and Percy are alone on Mars, but they have a secret mission : </p>
+            <p class="text">Find Curiosity and give him a new battery to reboot him ! </p>
+            <p class="text">But the mission is not easy, where is Curiosity ? </p>
+            <h2 class="text">Gameplay :</h2>
+            <p class="text">Defeat all the enemies with yours skills !</p>
+            <p class="text">Be careful : use yours technologies points to activate your skills ...</p>
+            <p class="text">But there is a limited points by fight !</p>
+        </div>
+
+        <div class="row d-flex justify-content-center fadeIn">
+            <form action="/mapping/index" method="post">
+                <button type="submit" class="button-start animate__heartBeat"> Start the journey ! </button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock %}
+
+{% block javascript %}
+<script src="/assets/script/home.js"></script>
+<script src="/assets/script/victory.js"></script>
+{% endblock %}

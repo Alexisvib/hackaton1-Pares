@@ -1,0 +1,37 @@
+<div id='skills-Ginny' class="display-none d-flex">
+    <row><h3 id='close-skills-ginny' class="close-skill mt-1 col-1 offset-12">X</h3></row>
+    <div class=" d-flex flex-column align-items-center" >
+
+        <form method="post" action="/level{{ session.progression }}/technology{{ session.progression }}" class="mt-3" id="magicKissForm">
+            <h2 class="title-technology spell" id="spellMagicKiss">Magic Kiss</h2>
+            <input class="title-technology spell" type="hidden" name="spell" id="spell" value="magicKiss"
+                   data-toggle="tooltip" data-placement="top" title="Heal 30% HP of the target | 1pt Technology">
+            <input type="hidden" name="attacker" id="attacker" value="{{ attacker }}">
+            <input type="hidden" name="target" id="attacker" value="{{ attacker }}">
+        </form>
+
+
+        <form method="post" action="/level{{ session.progression }}/technology{{ session.progression }}" class="mt-3" id="rockDropperForm">
+            <h2 class="title-technology spell" id="spellRock">Rock Dropper</h2>
+            <input class="title-technology spell" type="hidden" name="spell" id="spell" value="rockDropper"
+                   data-toggle="tooltip" data-placement="top" title="Ginny's attack + 20% bonus damage | 2pts Technology">
+            <input type="hidden" name="attacker" id="attacker" value="{{ attacker }}">
+        </form>
+
+
+        <form method="post" action="/level{{ session.progression }}/technology{{ session.progression }}" class="mt-3" id="martianTornadoForm">
+            <h2 class="title-technology spell" id="spellTornado">Tornado</h2>
+            <input class="title-technology spell" type="hidden" name="spell" id="spell" value="martianTornado"
+                   data-toggle="tooltip" data-placement="top" title="Ginny's attack + 60% bonus damage | 4pts Technology">
+            <input type="hidden" name="attacker" id="attacker" value="{{ attacker }}">
+        </form>
+
+        <form method="post" action="/level{{ session.progression }}/technology{{ session.progression }}" class="mt-3" id="eMcKissForm">
+            <h2 class="title-technology spell" id="spellMckiss">E=MC Kiss</h2>
+            <input class="title-technology spell" type="hidden" name="spell" id="spell" value="eMcKiss"
+                   data-toggle="tooltip" data-placement="top" title="Heal 100% HP of the target | 6pts Technology">
+            <input type="hidden" name="attacker" id="attacker" value="{{ attacker }}">
+            <input type="hidden" name="target" id="attacker" value="{{ attacker }}">
+        </form>
+    </div>
+</div>
