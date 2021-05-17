@@ -34,3 +34,4 @@ The purpose of the game : fight all the enemy and look after the robot Curiosity
 - Feature of login and interaction with the database
 - Animations of the fight with javascript and css (and on the Map)
 - Interactions between front and back during the fight (using Javascript to send form and handle CSS animations)
+- Work on victory conditions in the controller (Back-end)
